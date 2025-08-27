@@ -1,0 +1,96 @@
+
+import type { Member, UpdateRequest } from './types';
+
+export const members: Member[] = [
+  {
+    id: 'MM001',
+    name: 'Suresh Kumar',
+    mobile: '9876543210',
+    address: '123, Main Street, Bangalore, 560001',
+    bloodGroup: 'O+',
+    garageName: 'Suresh Auto Works',
+    photoUrl: 'https://placehold.co/100x100.png',
+    email: 'mm001@mechanicmitra.in',
+    status: 'active',
+    certificate: {
+      id: 'CERT001',
+      issuedDate: new Date('2023-05-20').toISOString(),
+      expiryDate: new Date('2025-05-19').toISOString(),
+    },
+    tags: ['Engine Specialist', 'TVS Expert', 'Advanced Diagnostics'],
+  },
+  {
+    id: 'MM002',
+    name: 'Ramesh Patel',
+    mobile: '9876543211',
+    address: '456, MG Road, Bangalore, 560002',
+    bloodGroup: 'A+',
+    garageName: 'Patel Bike Service',
+    photoUrl: 'https://placehold.co/100x100.png',
+    email: 'mm002@mechanicmitra.in',
+    status: 'active',
+    certificate: {
+      id: 'CERT002',
+      issuedDate: new Date('2022-08-15').toISOString(),
+      expiryDate: new Date('2023-08-14').toISOString(),
+    },
+    tags: ['Honda Certified', 'Electrical Work', 'Quick Service'],
+  },
+  {
+    id: 'MM003',
+    name: 'Anil Singh',
+    mobile: '9876543212',
+    address: '789, Koramangala, Bangalore, 560034',
+    bloodGroup: 'B+',
+    garageName: 'Singh Garage',
+    photoUrl: 'https://placehold.co/100x100.png',
+    email: 'mm003@mechanicmitra.in',
+    status: 'inactive',
+    certificate: {
+      id: 'CERT003',
+      issuedDate: new Date('2021-07-01').toISOString(),
+      expiryDate: new Date('2023-06-30').toISOString(),
+    },
+    tags: ['Yamaha Pro', 'Suspension Tuning'],
+  },
+  {
+    id: 'MM004',
+    name: 'Vijay Raj',
+    mobile: '9876543213',
+    address: '101, Indiranagar, Bangalore, 560038',
+    bloodGroup: 'AB+',
+    garageName: 'Raj Motors',
+    photoUrl: 'https://placehold.co/100x100.png',
+    email: 'mm004@mechanicmitra.in',
+    status: 'active',
+    certificate: {
+      id: 'CERT004',
+      issuedDate: new Date('2024-01-10').toISOString(),
+      expiryDate: new Date('2026-01-09').toISOString(),
+    },
+    tags: ['Royal Enfield', 'Custom Builds', 'Painting'],
+  },
+];
+
+export const updateRequests: UpdateRequest[] = [
+  {
+    id: 'REQ001',
+    memberId: 'MM002',
+    memberName: 'Ramesh Patel',
+    field: 'address',
+    oldValue: '456, MG Road, Bangalore, 560002',
+    newValue: '111, New Jayanagar, Bangalore, 560041',
+    requestDate: new Date('2024-07-28').toISOString(),
+    status: 'Pending',
+  },
+  {
+    id: 'REQ002',
+    memberId: 'MM004',
+    memberName: 'Vijay Raj',
+    field: 'mobile',
+    oldValue: '9876543213',
+    newValue: '9998887770',
+    requestDate: new Date('2024-07-27').toISOString(),
+    status: 'Pending',
+  },
+];
